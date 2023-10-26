@@ -1,0 +1,63 @@
+.promo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper {
+    position: relative;
+    width: fit-content;
+    width: 50%;
+    min-width: 358px;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    padding: 0.8rem 0.8rem 0.8rem 0;
+    border-radius: 15px;
+    background-color: rgba($background-grey, 1);
+  }
+
+  &__heading {
+    @include mxn-font-style($h1FontSize, auto, black, 500);
+  }
+
+  &__description {
+    @include mxn-font-style(20px, 28px, black, 400);
+    align-self: center;
+    padding-right: 30px;
+  }
+
+  &__button {
+    @include mxn-font-style(
+      $buttonFontSize,
+      $buttonLineHeight,
+      $buttonWeight,
+      white
+    );
+    width: 170px;
+    height: 54px;
+  }
+
+  &__button-down {
+    width: 54px;
+    height: 54px;
+    position: relative;
+  }
+
+  &__button-down svg {
+    position: absolute;
+    top: 19px;
+    right: 17px;
+  }
+
+  &__image {
+    margin-top: -100px;
+    margin-right: -72px;
+    width: 928px;
+    height: 669px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../img/diagrams.svg');
+  }
+}

@@ -1,0 +1,62 @@
+//Colors
+
+//Main
+$main-purple: #506CCF;
+$main-dark-purple: #3453C2;
+$main-blue: #49A1F1;
+
+//Text
+$text-black: #08123A;
+$text-dark-grey: #5F6B77;
+$text-light-grey: #E9EAF0;
+$text-blue-grey: #8B9FCC;
+
+//Gradient
+$gradient-purple: #506CCF;
+$gradient-blue: #3453C2;
+
+//Background
+$background-purple: #ECF2FE;
+$background-grey: #F5F9FF;
+
+//Viewports
+$desktop-width: 1440px;
+$image-max-width: 700px;
+
+//Retina
+$retina-dpi: 144dpi;
+$retina: "min-resolution: ${retina-dpi}";
+
+//Font parameters
+
+$baseFontSize: 1rem;
+$baseLineHeight: 1.375rem;
+$baseWeight: 400;
+
+$h1FontSize: 3rem;
+$h1LineHeight: 3.625rem;
+$h1Weight: 600;
+
+$h2FontSize: 2.5rem;
+$h2LineHeight: 3rem;
+$h2Weight: 500;
+
+$h3FontSize: 1.25rem;
+$h3LineHeight: 1.75rem;
+$h3Weight: 500;
+
+$h4FontSize: 1.125rem;
+$h4LineHeight: 	1.6875rem;
+$h4Weight: 400;
+
+$h5FontSize: 1rem;
+$h5LineHeight: 1.25rem;
+$h5Weight: 500;
+
+$labelFontSize: 1rem;
+$labelLineHeight: 1.375rem;
+$labelWeight: 700;
+
+$buttonFontSize: 1rem;
+$buttonLineHeight: 1.375rem;
+$buttonWeight: 500;

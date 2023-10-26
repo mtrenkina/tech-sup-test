@@ -1,0 +1,17 @@
+@mixin mxn-font-style($size: $baseFontSize, $lineHeight: $baseLineHeight, $weight: 400, $color: black) {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    color: $color;
+}
+  
+@mixin mxn-list-style() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+@mixin mxn-link-style($color: inherit) {
+    text-decoration: none;
+    color: $color;
+}

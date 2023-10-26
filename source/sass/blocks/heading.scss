@@ -1,0 +1,8 @@
+.heading {
+    font-family: "SF Pro Display", sans-serif;
+    @include mxn-font-style($h1FontSize, $h1LineHeight, 600, $text-black);
+    max-width: 100%;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+}

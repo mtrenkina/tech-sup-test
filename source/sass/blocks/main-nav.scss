@@ -1,0 +1,58 @@
+.main-nav {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+  gap: 60px;
+
+  &__logo img {
+    width: 36.82px;
+    height: 36.97px;
+  }
+
+  &__logo:hover {
+    opacity: 0.6;
+  }
+
+  &__wrapper {
+    position: absolute;
+    border-radius: 14px;
+    padding: 20px 40px;
+    right: 0px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+    row-gap: 20px;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contacts #language {
+    font-family: 'SF Pro Display', sans-serif;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: $text-blue-grey;
+    appearance: none;
+    padding-right: 76px;
+  }
+
+  &__contacts a {
+    display: block;
+    @include mxn-link-style(white);
+    min-width: max-content;
+    padding-right: 15px;
+  }
+}

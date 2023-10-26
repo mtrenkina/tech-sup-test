@@ -1,0 +1,67 @@
+{
+  "name": "tech-sup-test",
+  "private": true,
+  "type": "module",
+  "description": "Marketing Agency Pozitivus",
+  "homepage": "https://mtrenkina.github.io/tech-sup-test",
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.29.0",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-sync": "^0.1.4",
+    "gulp-ttf-to-woff": "^1.0.3",
+    "gulp-ttftowoff2": "^1.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "rename": "^1.0.4",
+    "sass": "^1.62.0",
+    "stylelint": "^14.15.0",
+    "stylelint-config-htmlacademy": "^1.1.2"
+  },
+  "scripts": {
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax sass",
+    "test": "npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "18.12.1"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+.social-list {
+  @include mxn-list-style;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  & a:hover {
+    opacity: 0.6;
+  }
+}

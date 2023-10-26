@@ -1,0 +1,15 @@
+.site-list {
+  @include mxn-list-style;
+  border-radius: 15px;
+  background-color: rgba($background-grey, 1);
+
+  &__item a {
+    @include mxn-link-style;
+    font-family: 'SF Pro Text', sans-serif;
+    @include mxn-font-style($h5FontSize, $h5LineHeight, 500, $text-dark-grey);
+  }
+
+  &__item a:hover {
+    opacity: 0.6;
+  }
+}
