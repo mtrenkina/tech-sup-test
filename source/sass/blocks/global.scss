@@ -25,6 +25,10 @@ img {
   overflow: hidden;
 }
 
+.page {
+  background-color: white;
+}
+
 .wrapper {
   display: flex;
   min-height: 100%;
@@ -33,6 +37,7 @@ img {
 
 .container {
   position: relative;
+  z-index: 0;
   box-sizing: border-box;
   margin: 0 auto;
   min-width: $desktop-width-max;
@@ -42,12 +47,13 @@ img {
   height: auto;
   font-family: 'Inter', sans-serif;
   background-color: $background-grey;
+  border-radius: 20px;
   @include mxn-font-style($baseFontSize, $baseLineHeight, 400, $text-dark-grey);
 }
 
 .container::after {
   content: '';
-  z-index: -10;
+  z-index: -1;
   position: absolute;
   max-width: 41%;
   width: 458px;
@@ -55,17 +61,14 @@ img {
   top: 0;
   right: 0;
   background-color: $background-purple;
-
-  border-radius: 0 20px 20px 0;
   background: linear-gradient(45deg, $gradient-purple 0%, $gradient-blue 100%);
+  border-radius: 0 20px 20px 0;
 }
 
 .page-main {
-  padding: 0 20px;
-  padding-top: 9.2rem;
+  padding: 9.2rem 2.5rem 0 8.375rem;
   overflow: hidden;
-  padding-right: 2.5rem;
-  padding-left: 8.375rem;
+  z-index: 10;
   background-position: top 447px right 403px, top 72px right 151px, top 482px right 725px, top 645px right 256px,
     top 13px right 550px, top 210px right 365px, right -1px top 58px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,

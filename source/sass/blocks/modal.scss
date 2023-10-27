@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   top: 20%;
   left: 30%;
   width: 557px;
@@ -8,14 +8,14 @@
   padding: 2.375rem 2.3125rem;
   border-radius: 11px;
   background-color: white;
-  box-shadow: 10px 10px 10px 10px rgba(#5F6B77, .2);
+  box-shadow: 10px 10px 10px 10px rgba(#5f6b77, 0.2);
   @include mxn-font-style(1rem, 1.25rem, 600, black);
-  display:none;
+  display: none;
 
   &__title {
     text-align: center;
     @include mxn-font-style(1.25rem, 1.375rem, 600, $text-black);
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
   }
 
   & span {
@@ -32,23 +32,19 @@
 }
 
 @keyframes bounce {
-    0% {
-     -webkit-transform:translateY(-2000px);
-     transform:translateY(-2000px)
-    }
-    70% {
-     -webkit-transform:translateY(30px);
-     transform:translateY(30px)
-    }
-    90% {
-     -webkit-transform:translateY(-10px);
-     transform:translateY(-10px)
-    }
-    to {
-     -webkit-transform:translateY(0);
-     transform:translateY(0)
-    }
-   }
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 .modal-show {
   display: block;

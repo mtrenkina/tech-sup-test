@@ -1,7 +1,7 @@
 .site-list {
   @include mxn-list-style;
   border-radius: 15px;
-  padding-right: 65px;
+  padding-right: 4.0625rem;
   min-width: 30%;
 
   &__item a {

@@ -1,19 +1,19 @@
 .social-list {
   @include mxn-list-style;
-  padding-top: 12px;
+  padding-top: 0.75rem;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 
   &__item {
     width: 40px;
     height: 40px;
-    padding: 0px;
+    padding: 0;
     position: relative;
   }
 
-  &__item:nth-child(3) .button{
+  &__item:nth-child(3) .button {
     border: none;
   }
 
@@ -22,7 +22,7 @@
     max-width: 100%;
     width: 40px;
     height: 40px;
-    padding: 3px;
+    padding: 0.1875rem;
   }
 
   &__image {
@@ -41,7 +41,6 @@
     background-size: contain;
     background-image: url('../../img/yandex-zen.png');
   }
-
 
   & a:hover {
     opacity: 0.6;
