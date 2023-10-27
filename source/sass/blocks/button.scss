@@ -1,5 +1,5 @@
 .button {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "SF Pro Text", sans-serif;
   @include mxn-font-style(
     $buttonFontSize,
     $buttonLineHeight,
@@ -7,7 +7,6 @@
     white
   );
   padding: 0.75rem 1.5625rem 0.75rem 1.5rem;
-  max-width: max-content;
   width: 127px;
   height: 46px;
   background-color: $main-blue;
@@ -21,6 +20,15 @@
   &--transparent {
     background-color: transparent;
     border: 1px solid $text-light-grey;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid $text-light-grey;
+  }
+
+  &--bold-border {
+    border: 2px solid $text-dark-grey;
   }
 
   &:hover {

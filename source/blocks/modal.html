@@ -1,27 +1,76 @@
 <section class="modal">
-    <h2 class="modal__title"></h2>
-    
-    <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__image social-list__image--tg" width="22" height="22">
-                <use xlink:href="sprite.min.svg#icon-telegram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__image social-list__image--vk" width="22" height="22">
-                <use xlink:href="sprite.min.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__image social-list__image--zen" width="22" height="22">
-                <use xlink:href="sprite.min.svg#icon-zen-yandex"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+  <h2 class="modal__title">Контактная информация</h2>
+  <ul class="modal__contacts contacts-list">
+    <li class="contacts-list__item">
+      <div class="contacts-list__location">
+        <svg width="24" height="22">
+          <use xlink:href="sprite.min.svg#icon-location"></use>
+        </svg>
+        <span>Наш офис</span>
+      </div>
+      <p>Санкт-Петербург, ул. Такая-то, д. 1</p>
+      <a class="contacts-list__map-link" href="#">Показать на карте</a>
+    </li>
+    <li class="contacts-list__item">
+      <div class="contacts-list__contacts-wrapper">
+        <p>
+          <span>Звоните:</span><a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        </p>
+        <p>
+          <span>Пишите:</span><a href="mailto:info@test.ru">info@test.ru</a>
+        </p>
+      </div>
+      <button class="contacts-list__button button button--transparent button--bold-border">
+        Заказать звонок
+      </button>
+    </li>
+    <li class="contacts-list__item">
+      <div class="contacts-list__work-time">
+        <svg width="22" height="22">
+          <use xlink:href="sprite.min.svg#icon-clock"></use>
+        </svg>
+        <span>Режим работы:</span>
+      </div>
+      <p>
+        Пн-Пт — с 10:00 до 18:00 <br />
+        Сб-Вс — выходной
+      </p>
+    </li>
+  </ul>
+  <div class="modal__social">
+    <span>Мы в соцсетях</span>
+    <ul class="modal__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link button button--transparent" href="#">
+          <svg
+            class="social-list__image social-list__image--tg"
+            width="22"
+            height="22"
+          >
+            <use xlink:href="sprite.min.svg#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link button button--transparent" href="#">
+          <svg
+            class="social-list__image social-list__image--vk"
+            width="22"
+            height="22"
+          >
+            <use xlink:href="sprite.min.svg#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link button button--transparent" href="#">
+          <div
+            class="social-list__image social-list__image--zen"
+            width="22"
+            height="22"
+          ></div>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>

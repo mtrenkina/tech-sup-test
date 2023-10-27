@@ -2,29 +2,34 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   &__wrapper {
     position: relative;
-    width: fit-content;
-    width: 50%;
-    min-width: 358px;
+    min-width: 18%;
     max-width: 620px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 41px;
-    padding: 0.8rem 0.8rem 0.8rem 0;
-    border-radius: 15px;
-    background-color: rgba($background-grey, 1);
+    gap: 45px;
+    padding: 0.8rem 0 0.8rem 0;
+    z-index: 1;
   }
 
-  &__heading {
-    @include mxn-font-style($h1FontSize, auto, black, 500);
+  & .heading {
+    @include mxn-font-style($h1FontSize, $h1LineHeight, 600);
+    display: inline;
+    border-radius: 15px;
+    background: rgba($background-grey, 0.8);
   }
 
   &__description {
-    @include mxn-font-style(20px, 28px, black, 400);
-    align-self: center;
-    padding-right: 30px;
+    @include mxn-font-style(20px, 28px, 400);
+    display: inline;
+    padding-top: 15px;
+    margin-right: 70px;
+    border-radius: 15px;
+    background-color: rgba($background-grey, 0.8);
   }
 
   &__button {
@@ -34,6 +39,7 @@
       $buttonWeight,
       white
     );
+    margin-top: 14px;
     width: 170px;
     height: 54px;
   }
@@ -48,16 +54,5 @@
     position: absolute;
     top: 19px;
     right: 17px;
-  }
-
-  &__image {
-    margin-top: -100px;
-    margin-right: -72px;
-    width: 928px;
-    height: 669px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../../img/diagrams.svg');
   }
 }

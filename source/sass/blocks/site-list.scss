@@ -1,12 +1,13 @@
 .site-list {
   @include mxn-list-style;
   border-radius: 15px;
-  background-color: rgba($background-grey, 1);
+  padding-right: 65px;
+  min-width: 30%;
 
   &__item a {
     @include mxn-link-style;
     font-family: 'SF Pro Text', sans-serif;
-    @include mxn-font-style($h5FontSize, $h5LineHeight, 500, $text-dark-grey);
+    @include mxn-font-style($h5FontSize, $h5LineHeight, $h5Weight, $text-dark-grey);
   }
 
   &__item a:hover {

@@ -12,18 +12,17 @@ import autoprefixer from 'autoprefixer';
 import csso from 'gulp-csso';
 import rename from 'gulp-rename';
 import svgstore from 'gulp-svgstore';
-import svgmin from 'gulp-svgmin';
 import sync from 'browser-sync';
 import imagemin from 'gulp-imagemin';
 import imageminOptipng from 'imagemin-optipng';
 import imageminSvgo from 'imagemin-svgo';
 import imageminMozjpeg from 'imagemin-svgo';
-import webp from 'gulp-webp';
 import fileinclude from 'gulp-file-include';
 let uglify = require('gulp-uglify-es').default;
 import babel from 'gulp-babel';
 import ttfToWoff2 from "gulp-ttftowoff2";
 import ttfToWoff from 'gulp-ttf-to-woff';
+import concat from 'gulp-concat';
 
 const path = {
   build: {
@@ -36,7 +35,7 @@ const path = {
   source: {
     source: 'source/',
     html: 'source/blocks/*.html',
-    js: 'source/js/script.js',
+    js: 'source/js/*.js',
     sass: 'source/sass/style.scss',
     img: 'source/img/**/*.*',
     icons: 'source/img/icons/icon-*.svg',
@@ -90,8 +89,8 @@ export const scriptsBuild = () => {
         presets: ['@babel/env'],
       })
     )
-    .pipe(rename('main.min.js'))
-    .pipe(sourcemap.write())
+    .pipe(concat('main.min.js'))
+    .pipe(sourcemap.write('.'))
     .pipe(gulp.dest(path.build.js))
     .pipe(sync.create().stream());
 };
@@ -130,37 +129,11 @@ export const images = () => {
     .pipe(gulp.dest(path.build.img));
 };
 
-// Make Webp
-export const makeWebp = () => {
-  return gulp
-    .src(path.source.webp)
-    .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest(path.build.img));
-};
-
 // Sprite
 export const sprite = () => {
   return gulp
     .src(path.source.icons)
     .pipe(svgstore({ inlineSvg: true }))
-    /*.pipe(
-      svgmin({
-        plugins: [
-          {
-            name: 'removeViewBox',
-            parmas: {
-              active: false,
-            },
-          },
-          {
-            name: 'cleanupIDs',
-            parmas: {
-              active: false,
-            },
-          },
-        ],
-      })
-    )*/
     .pipe(rename('sprite.min.svg'))
     .pipe(gulp.dest('build'));
 };

@@ -1,0 +1,55 @@
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 27px;
+
+    &__location {
+        padding-bottom: 13px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    &__map-link {
+        width: fit-content;
+        display: block;
+        padding-top: 7px;
+        color: $main-purple;
+        text-decoration: none;
+        border-bottom: 1px solid $main-purple;
+    }
+
+    &__item:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__contacts-wrapper a {
+        @include mxn-link-style($text-black);
+        padding-left: 7px;
+    }
+
+    &__button {
+        width: 188px;
+        color: $text-dark-grey;
+    }
+
+    &__work-time {
+        padding-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    & a:hover {
+        opacity: 0.6;
+    }
+}

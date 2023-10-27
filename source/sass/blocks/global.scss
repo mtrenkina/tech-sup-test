@@ -35,9 +35,11 @@ img {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  min-width: 890px;
+  min-width: $desktop-width-max;
   max-width: $desktop-width;
+  min-height: 800px;
   width: 100%;
+  height: auto;
   font-family: 'Inter', sans-serif;
   background-color: $background-grey;
   @include mxn-font-style($baseFontSize, $baseLineHeight, 400, $text-dark-grey);
@@ -47,6 +49,7 @@ img {
   content: '';
   z-index: -10;
   position: absolute;
+  max-width: 41%;
   width: 458px;
   height: 100%;
   top: 0;
@@ -63,4 +66,12 @@ img {
   overflow: hidden;
   padding-right: 2.5rem;
   padding-left: 8.375rem;
+  background-position: top 447px right 403px, top 72px right 151px, top 482px right 725px, top 645px right 256px,
+    top 13px right 550px, top 210px right 365px, right -1px top 58px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat;
+  background-size: auto, auto, auto, auto, auto, auto, auto;
+  background-image: url('../../img/rectangle.png'), url('../../img/man-2.png'), url('../../img/man.png'),
+    url('../../img/ellipse-orange.png'), url('../../img/ellipse-purple.png'),
+    url('../../img/ellipse-red.png'), url('../../img/diagrams.svg');
 }
